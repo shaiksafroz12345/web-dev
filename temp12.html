@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcu()
+        {
+            let str=""
+            let number=document.getElementById("n").value 
+            for(let i=1;i<=10;i++){
+                str+=`${number} * ${i} =${number * i}<br>`
+            }
+            root.innerHTML=str
+            
+        }
+    </script>
+</head>
+<body>
+    <p><input type="number" id="n"  onchange="calcu()" placeholder="number"></p>
+    <!-- <button onclick="calcu()">Submit</button> -->
+    <hr>
+    <div id="root"></div>
+</body>
+</html>

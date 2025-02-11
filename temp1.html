@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function data()
+        {
+            let a=document.getElementById("n1").value 
+            let b=document.getElementById("n2").value 
+            let c=document.getElementById("n3").value 
+            let d=document.getElementById("n4").value 
+            let str=`${a} <br>`
+            str=str +`${b} <br>`
+            str=str+`${c} <br>`
+            str=str+`${d} <br>`
+            d1.innerHTML=str
+        }
+    </script>
+</head>
+<body>
+    <p><input type="text" id="n1"></p>
+    <p><input type="number" id="n2"></p>
+    <p><input type="text" id="n3"></p>
+    <p><input type="text" id="n4"></p>
+    <div id="d1"></div>
+    <button onclick="data()">Submit</button>
+</body>
+</html>
