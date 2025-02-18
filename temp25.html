@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        background-color: #eeeeee;
+      }
+      .container {
+        margin: auto;
+        background-color: white;
+        width: 200px;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-around;
+      }
+      .title {
+        text-align: center;
+      }
+      .header {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      input{
+        width: 100%;
+        margin: 2px;
+      }
+      select {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">facebook</h1>
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <div class="header">Create a new account</div>
+          <div>It's quick and easy.</div>
+        </div>
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Firstname" />
+        <input type="text" placeholder="Firstname" />
+      </div>
+      <div class="row">
+        <div>Date of Birth:</div>
+        </div>
+      <div class="row">
+       <select id="day"></select>
+       <select id="month"></select>
+       <select id="year"></select>
+      </div>
+    </div>
+    </div>
+    <script>
+        let str = ""
+        for(let i=1;i<=31;i++){
+        str += `<option value=${i}>${i}</option>`
+        }
+        day.innerHTML = str
+        let str1 = ""
+        for(let i=1905;i<=2025;i++){
+        str += `<option value=${i}>${i}</option>`
+        }
+        year.innerHTML = str1
+        
+    </script>
+  </body>
+</html>
