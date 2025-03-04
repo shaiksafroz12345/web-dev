@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-        function calc(){
-            let number1=Number(document.getElementById("n1").value)//string to number converter
-            let number2=Number(document.getElementById("n2").value)
-            let str=`${number1} + ${number2} = ${number1+number2}<br>`
-            str=str + `${number1} - ${number2} = ${number1-number2}<br>`
-            str=str + `${number1} * ${number2} = ${number1*number2}<br>`
-            str=str + `${number1} / ${number2} = ${number1/number2}<br>`
-            d1.innerHTML=str
-        }
-    </script>
-</head>
-<body>
-    <p><input type="number" id="n1" placeholder="enter the number1"></p>
-    <p><input type="number" id="n2"placeholder="enter the number2"></p>
-    <button onclick="calc()">Submit</button>
-    <div id="d1"></div>
-    <!-- <div id="d2"></div>
-    <div id="d3"></div>
-    <div id="d4"></div> -->
-</body>
+  </head>
+  <body>
+    <h1>Temp 4</h1>
+    <svg height="300" width="900">
+      <circle
+        cx="100"
+        cy="100"
+        r="50"
+        stroke="blue"
+        stroke-width="1"
+        fill="yellow"
+      />
+      <ellipse
+        cx="200"
+        stroke="blue"
+        stroke-width="5"
+        cy="200"
+        rx="85"
+        ry="55"
+        fill="orange"
+      />
+      <text fill="black" font-size="45" font-family="Verdana" x="150" y="200">
+        Zee Cinema
+      </text>
+      <rect
+        x="250"
+        y="10"
+        width="100"
+        height="100"
+        stroke="red"
+        stroke-width="5"
+        fill="pink"
+      />
+    </svg>
+    <hr />
+    <audio controls>
+      <source src="assets/media/boot.mp3" type="audio/mpeg" /></audio
+    ><br />
+    <audio controls>
+      <source src="assets/media/boot.mp3" type="audio/mpeg" />
+    </audio>
+    <hr />
+    <video width="320" height="240" controls autoplay muted>
+      <source src="assets/media/st1.mp4" type="video/mp4" />
+    </video>
+  </body>
 </html>
